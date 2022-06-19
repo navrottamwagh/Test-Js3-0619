@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <ol id="ol">
+
+        </ol>
+    </div>
+    <script>
+        //Question 1
+        // ans 
+        const input = [1, -5, 2, 10, -30, 29, 50];
+        let sum = 0;
+
+        function addition() {
+            for (let i = 0; i <= input.length - 1; i++) {
+                if (input[i] >= 0) {
+                    sum = sum + input[i];
+                }
+            }
+            return sum;
+        }
+        console.log(addition(input));
+
+
+
+        //Question 2
+        //ans
+        let friends = [{
+            fname: 'Rachal',
+            lname: "Green",
+            id: 1,
+            marks: 98
+        }, {
+            fname: 'Ross',
+            lname: "Geller",
+            id: 2,
+            marks: 23
+        }, {
+            fname: 'Monica ',
+            lname: "Geller",
+            id: 3,
+            marks: 75
+        }, {
+            fname: 'Joey',
+            lname: " Tribbiani",
+            id: 4,
+            marks: 46
+        }, {
+            fname: 'Chandler  ',
+            lname: "Bing",
+            id: 5,
+            marks: 78
+        }, {
+            fname: 'Phoebe',
+            lname: "Buffay",
+            id: 6,
+            marks: 45
+        }]
+        friends.map(function(a, i) {
+            console.log(friends[i].fname, friends[i].lname);
+        })
+
+
+
+        //Question 3
+        //ans
+        var list = document.getElementById('ol');
+        var city = ['Delhi', 'Mumbai', 'Jaipr', 'Kolkata', 'Indor'];
+        for (let i = 0; i < city.length; i++) {
+            list.innerHTML += `<li>${city[i]}</li>`
+            console.log(city[i]);
+        }
+    </script>
+</body>
+
+</html>
